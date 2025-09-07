@@ -4,12 +4,19 @@
   box-sizing: border-box;
 }
 
+nav a:hover {
+  background-color:white ;
+  color:black; 
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 20px;
+}
 
 .container{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-bottom: 10px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .info1{
@@ -77,6 +84,7 @@ padding: 8px;
 }
 
 nav a{
+text-decoration: none;
 color: white;
 font-size: 20px;
 }
@@ -100,6 +108,12 @@ h3{
     padding: 10px;
     margin: 10px 10px;
     gap: 20px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .info2 p{
