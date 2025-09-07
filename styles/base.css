@@ -47,6 +47,8 @@ h2{
 .card2{
     border: 1px solid black;
     border-radius: 10px 10px 0px 0px;
+    font-size: 20px;
+    color: black;
 }
 
 ul{
@@ -114,11 +116,27 @@ footer{
     text-align: center;
     padding: auto;
     background-color: #1d4d72;
-    height: 50px;
-    font-size: x-large;
+    height: 80px;
+    font-size: large;
     color: white;
 }
 
 img{
     border-radius: 20px;
+}
+
+figure {
+  display: flex;
+  flex-flow: column;
+  padding: 2px;
+}
+figcaption{
+    margin: 0px 0px 0px 50px;
+    font-size: 20px;
+    color: slategray;
+}
+
+#lastModified{
+    font-size: small;
+    color: yellow;
 }
