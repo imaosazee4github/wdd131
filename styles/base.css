@@ -126,14 +126,14 @@ main {
     line-height: 1.6;
 }
 
-footer{
-    text-align: center;
-    padding: auto;
-    background-color: #1d4d72;
-    height: 80px;
-    font-size: large;
-    color: white;
+
+footer {
+  background-color: #1d4d72;
+  color: #fff;
+  text-align: center;
+  padding: 20px;  
 }
+
 
 img{
     border-radius: 20px;
