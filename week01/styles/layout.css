@@ -1,0 +1,48 @@
+header{
+    background-color: #333333;
+    color: white;
+}
+
+header h4 {
+    padding: 4px;
+    margin: 8px 8px;
+    font-size: larger;
+}
+
+
+
+nav{
+background-color: #000000;
+color: white;
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 6px;
+list-style: none;
+font-size: larger;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    min-height: 600px;
+}
+
+main{
+    background-color: #cccccc;
+    font-size: large;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    padding: auto;
+    background-color: red;
+    height: 150px;
+}
