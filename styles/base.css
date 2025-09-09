@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,22 +19,22 @@ nav a:hover {
     gap: 20px;
 }
 
-.info1{
+/* .info1{
     display: flex;
     padding: 10px;
     margin: 10px 10px;
     gap: 20px;
-}
+} */
 
-.info1 p{
+/* .info1 p{
     width: 500px;
     margin: 8px;
     padding: 6px;
     font-weight: 600;
     color: slategrey;
     line-height: 1.6;
-    gap: 20px;
-}
+    gap: 20px; */
+/* } */
 
 .card{
     border: 1px solid black;
@@ -42,25 +42,39 @@ nav a:hover {
 }
 
 h2{
-    background-color: #1d4d72;
-    text-align: center;
-    border-radius: 10px 10px 0px 0px;
-    align-items: center;
-    padding: 4px;
-    color: white;
+  background-color: #1d4d72;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding: 12px 4px;
+  color: white;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+  padding: 8px 2px;
+  text-decoration: underline;
+  font-size: 1.25rem;
+  color: #2f4f4f; 
+}
+
+.card,
+.card2 {
+  border: 1px solid #333;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
 }
 
 
 .card2{
-    border: 1px solid black;
-    border-radius: 10px 10px 0px 0px;
     font-size: 20px;
     color: black;
 }
 
-ul{
-margin: 30px;
-line-height: 30px;
+ul {
+  margin: 30px;
+  line-height: 1.8;
+  padding-left: 20px;
 }
 
 .imageFlge{
@@ -87,12 +101,24 @@ nav a{
 text-decoration: none;
 color: white;
 font-size: 20px;
+padding: 8px 16px;
+border-radius: 4px;
+transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  outline: 2px solid #1d4d72;
 }
 
 
 header span{
     font-size: 20px;
     padding: 10px 0px;
+    display: block;
 }
 
 h3{
@@ -103,12 +129,18 @@ h3{
     color: slategray;
 }
 
-.info2{
+.info1,
+.info2 {
     display: flex;
     padding: 10px;
     margin: 10px 10px;
     gap: 20px;
 }
+
+.info2 p {
+  min-height: 300px;
+}
+
 h1{
     font-size: larger;
     padding: 10px;
@@ -120,7 +152,8 @@ main {
   padding: 1rem;
 }
 
-.info2 p{
+.info1 p,
+.info2 p {
     width: 500px;
     height: 300px;
     margin: 8px;
@@ -135,27 +168,40 @@ footer {
   background-color: #1d4d72;
   color: #fff;
   text-align: center;
-  padding: 20px;  
+  padding: 20px;
+  margin-top: 40px;
 }
 
 
-img{
-    border-radius: 20px;
+img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: 200px;
 }
 
 figure {
   display: flex;
-  flex-flow: column;
-  padding: 2px;
+  flex-direction: column;
+  padding: 8px;
+  margin: 10px 0;
 }
+
 figcaption{
-    margin: 0px 0px 0px 50px;
-    font-size: 20px;
-    color: slategray;
+  margin: 8px 0 0 0;
+  font-size: 18px;
+  color: #2f4f4f;
+  text-align: center;
+  font-style: italic;
 }
 
 #lastModified{
     font-size: small;
-    color: yellow;
+    color: #b8d4e3;
+    font-weight: bold;
+}
+
+*:focus {
+  outline: 2px solid #1d4d72;
+  outline-offset: 2px;
 }
 
