@@ -46,7 +46,6 @@ nav a{
 }
 
 .temple-image-container{
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     margin: 45px;
@@ -106,7 +105,4 @@ img:active,
 img:hover {   
   transform: scale(1.1); 
 }
-#menu {
-		display: none;
-	}
 }
