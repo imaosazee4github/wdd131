@@ -13,12 +13,12 @@
 }
 
 header{
-    background-color: #3c0a64;
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    color: white;
+    color: var(--text-color-light);
     max-width: 1250px;
 }
 
@@ -28,26 +28,26 @@ header h2{
 
 
 nav a:hover{
-    background-color: #ffffff;
+    background-color: var(--text-color-light);
     padding: 6px;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
 }
 
 
 nav a{
-    color: white;
+    color: var(--text-color-light);
     text-decoration: none;
 }
 
 .imagePic{
     width: 350px;
     height: 200px;
+    border-radius: var(--border-radius);
 }
 
 .temple-image-container{
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
     margin: 45px;
     gap: 30px;
     
@@ -65,13 +65,13 @@ main h1{
 
 #lastModified{
     font-size: small;
-    color: #ffffff;
+    color: var(--text-color-light);
     font-weight: bold;
 }
 
 footer {
-  background-color:#3c0a64;
-  color: white;
+  background-color:var(--primary-color);
+  color: var(--text-color-light);
   text-align: center;
   padding: 20px;
 }
@@ -86,7 +86,7 @@ figure {
 figcaption{
   margin: 8px 0 0 0;
   font-size: 18px;
-  color: #000000;;
+  color: var(--text-color-dark);
   text-align: center;
   font-weight: bold;
   font-style: italic;
