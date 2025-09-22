@@ -1,5 +1,13 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
 	font-family: Roboto, helvetica, sans-serif;
+    margin: 1rem;
 }
 
 header,
@@ -16,6 +24,7 @@ marquee {
 
 h1 {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 main {
@@ -34,8 +43,10 @@ article p {
 }
 
 .callout {
+    border: 1px solid rgba(0, 0, 0, 0.1);
 	color: #000;
-	background-color: #fff;
+	background-color: #eee;
+    grid-column: 1/3;
     padding: 4px;
 }
 
@@ -43,5 +54,4 @@ footer {
 	margin-top: 1rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	font-size: smaller;
-	text-align: right;
 }
