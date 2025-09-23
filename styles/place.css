@@ -22,6 +22,17 @@
   grid-template-columns: 1fr;
 }
 
+
+h1::after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
 main {
   max-width: 1200px;
   margin: 0 auto;
