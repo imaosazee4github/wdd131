@@ -15,10 +15,10 @@ const statesData = {
             internetTLD: ".ng"
         },
         weather: {
-            temperature: "28°C",
+            temperature: 28,
             conditions: "Tropical",
-            wind: "15 km/h",
-            windChill: "26°C"
+            wind: 15,
+            windChill: null
         }
     },
     lagos: {
@@ -32,16 +32,16 @@ const statesData = {
             internetTLD: ".ng"
         },
         weather: {
-            temperature: "30°C",
+            temperature: 30,
             conditions: "Hot & Humid",
-            wind: "12 km/h",
-            windChill: "28°C"
+            wind: 12,
+            windChill: null
         }
     },
     abuja: {
         country: {
             area: "7,315 km²",
-            population: "3+ million",
+            population: "218+ million",
             capital: "Abuja",
             language: "English, Hausa",
             currency: "Nigerian Naira (₦)",
@@ -49,10 +49,10 @@ const statesData = {
             internetTLD: ".ng"
         },
         weather: {
-            temperature: "26°C",
-            conditions: "Mild & Pleasant",
-            wind: "8 km/h",
-            windChill: "24°C"
+            temperature: 28,
+            conditions: "Tropical",
+            wind: 15,
+            windChill: null
         }
     },
     kano: {
@@ -66,10 +66,10 @@ const statesData = {
             internetTLD: ".ng"
         },
         weather: {
-            temperature: "35°C",
+            temperature: 35,
             conditions: "Hot & Dry",
-            wind: "20 km/h",
-            windChill: "32°C"
+            wind: 20,
+            windChill: null
         }
     },
     rivers: {
@@ -83,10 +83,10 @@ const statesData = {
             internetTLD: ".ng"
         },
         weather: {
-            temperature: "32°C",
+            temperature: 32,
             conditions: "Hot & Humid",
-            wind: "10 km/h",
-            windChill: "30°C"
+            wind: 10,
+            windChill: null
         }
     },
     edo: {
@@ -100,10 +100,10 @@ const statesData = {
             internetTLD: ".ng"
         },
         weather: {
-            temperature: "29°C",
+            temperature: 29,
             conditions: "Tropical",
-            wind: "14 km/h",
-            windChill: "27°C"
+            wind: 14,
+            windChill: null
         }
     }
 };
@@ -136,6 +136,11 @@ stateOptions.forEach(state => {
 });
 
 }
+
+function calculateWindChill(temp, wind){
+    return (temp <= 10 && wind > 4.8) ? Math.round(13.2 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)) + "°C" : temp + "°C";
+}
+
 // update country data (data1)
 function updateCountryData(stateKey){
     const countryData = statesData[stateKey].country;
@@ -154,12 +159,13 @@ function updateCountryData(stateKey){
 // update weather data(data2)
 function updateWeatherData(stateKey) {
     const weatherData = statesData[stateKey].weather;
+    const windChill = calculateWindChill(weatherData.temperature, weatherData.wind);
 
     data2List.innerHTML = `
-    <li>Temperature: <span>${weatherData.temperature}</span></li>
+    <li>Temperature: <span>${weatherData.temperature}°C</span></li>
     <li>Conditions: <span>${weatherData.conditions}</span></li>
-    <li>Wind: <span>${weatherData.wind}</span></li>
-    <li>Wind Chill: <span>${weatherData.windChill}</span></li>
+    <li>Wind: <span>${weatherData.wind}km/h</span></li>
+    <li>Wind Chill: <span>${windChill}</span></li>
     `;
 
 }
@@ -175,13 +181,8 @@ function handleStateChange(event) {
 
     // update header title
     const headerTitle = document.querySelector('header h1');
-    if (selectedState === 'default'){
-        headerTitle.textContent = 'Nigeria';
-    } else {
-        const stateName = event.target.options[event.target.selectedIndex].text;
-        headerTitle.textContent = stateName;
-    }
-}
+    headerTitle.textContent = (selectedState === 'default') ? 'Nigeria' : event.target.options[event.target.selectedIndex].text;
+}    
 
 function init(){
     populateStates();
@@ -194,5 +195,4 @@ function init(){
 }
 
 document.addEventListener('DOMContentLoaded', init);
-
 
