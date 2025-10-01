@@ -137,8 +137,8 @@ stateOptions.forEach(state => {
 
 }
 
-function calculateWindChill(temp, wind){
-    return (temp <= 10 && wind > 4.8) ? Math.round(13.2 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)) + "°C" : temp + "°C";
+function calculateWindChill(temp, wind) {
+  return Math.round(13.12 + (0.6215 * temp) - (11.37 * Math.pow(wind, 0.16)) + (0.3965 * temp * Math.pow(wind, 0.16))) + "°C";
 }
 
 // update country data (data1)
@@ -159,7 +159,11 @@ function updateCountryData(stateKey){
 // update weather data(data2)
 function updateWeatherData(stateKey) {
     const weatherData = statesData[stateKey].weather;
-    const windChill = calculateWindChill(weatherData.temperature, weatherData.wind);
+
+
+    const windChill = (weatherData.temperature <= 10 && weatherData.wind > 4.8)
+           ? calculateWindChill(weatherData.temperature, weatherData.wind)
+           : weatherData.temperature + "°C";
 
     data2List.innerHTML = `
     <li>Temperature: <span>${weatherData.temperature}°C</span></li>

@@ -67,6 +67,25 @@ main {
   color: white;
 }
 
+.weather-svg-mobile{
+  display: inline-block;
+}
+
+.weather-emoji-desktop{
+  display: none;
+}
+
+
+@media (min-width: 769px){
+  .weather-svg-mobile {
+    display: none;
+  }
+  .weather-emoji-desktop{
+    display: inline-block;
+    font-size: 2rem;
+  }
+}
+
 .data1 {
   position: absolute;
   top: 10rem;
