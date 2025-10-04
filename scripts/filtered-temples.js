@@ -161,4 +161,12 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 
 document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
 
+const nav = document.querySelector(".navigation")
+const humButton = document.querySelector('#menu')
+
+humButton.addEventListener('click', () => {
+	nav.classList.toggle('show');
+    humButton.classList.toggle('show');
+})
+
 filteredTemples("home")

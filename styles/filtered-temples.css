@@ -48,7 +48,9 @@ h2{
 #menu.show::before{
     content: "x";
 }
-
+ .show li{
+    display: block;
+ }
 
 .navigation{
     list-style: none;
@@ -133,7 +135,7 @@ h2{
     font-size: 0.95rem;
     color: #222;
 }
-@media(mmax-width: 420px){
+@media(max-width: 420px){
     .imagePic {
         height: 160px;
     }
