@@ -1,0 +1,54 @@
+/* Typography */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #F9F9F9;
+  color: #2C3E50;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2C3E50;
+}
+
+header {
+  background: #2C3E50;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+footer {
+  background: #2C3E50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Color boxes for preview */
+.color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.color-box.primary { background-color: #2C3E50; }
+.color-box.secondary { background-color: #E67E22; }
+.color-box.background { background-color: #F9F9F9; border: 1px solid #ccc; }
