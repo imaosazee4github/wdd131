@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow:10px
+}
+
+.rates1,
+.rates2,
+.rates3,
+.rates4,
+.rates5{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.name_user input,
+.review-note textarea,
+.date-input input,
+.select-input{
+width: 90%;
+height: 40px;
+}
+
+.numb{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.productitems{
+    margin: auto;
+    width: 600px;
+}
+
+.name_user label,
+.review-note label,
+.date-input label,
+.productitems label{
+    font-size: large;
+    font-weight: bold;
+}
+
+.features-contents label{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    font-size: large;
+    font-weight: 900;
+}
+
+
+
+.features-contents legend{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+
+.required{
+    color: rgb(45,3,43);
+}
+
+.rate-text{
+font-size: large;
+font-weight: bold;
+}
+
+.name_user,
+.review-note,
+.features-contents,
+.date-input,
+.rating-content{
+    width: 600px;
+    margin: 20px auto;
+}
+
+.submit-btn{
+    display: block;
+    background-color: rgb(45,3,43);
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+textarea,
+input{
+    padding: 4px;
+    font-weight: bold;
+}
+
+.star-rate{
+color: blue;
+font-size: 1.5rem;
+}
+
+footer{
+    background-color: rgb(45,3,43);
+    color: white;
+    padding: 20px;
+}
+
+footer p{
+    text-align: center;
+}
+
+header{
+    background-color: rgb(45,3,43);
+    height: auto;
+    padding: 5px 0px;
+}
+
+header p{
+    text-align: center;
+    font-size: larger;
+    color: white;
+    margin: 4px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.form-container{
+    margin: 10px 0px;
+    background-color: #d5cdd5;
+}
+
+
+.form-container{
+    padding: 30px 0px;
+
+}
+
+.submitted-form{
+    background-color: #d5cdd5;
+
+}
+
+.submitted-form span{
+    color: black;
+    border-radius: 50%;
+    background-color: white;
+    padding: 4px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.btn-x{
+    text-decoration: none;
+}
+
+.submitted-form h1{
+    color: black;
+}
+
+.submitted-form p{
+    text-align: center;
+    line-height: 35px;
+    font-size: large;
+    font-weight: 900;
+}

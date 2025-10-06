@@ -1,0 +1,58 @@
+main,
+.form-container,
+.name_user,
+.review-note,
+.features-contents,
+.date-input,
+.rating-content,
+.productitems{
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+}
+
+
+header h1{
+    font-size: 1.5rem;
+}
+
+header p{
+    font-size: 1rem;
+}
+
+
+label, legend {
+    font-size: 1rem;
+}
+
+
+label, legend{
+    font-size: 1rem;
+}
+
+.select-input,
+textarea,
+input[type="text"],
+input[type = "date"]{
+    width: 100%;
+}
+
+.rating {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rating .numb{
+    margin-bottom: 0.25rem;
+}
+
+.submit-btn{
+    width: 100%;
+    max-width: 200px;
+}
+
+footer{
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px;
+}

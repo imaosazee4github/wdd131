@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product Review Form that is responsive, user-friendly and includes a comfirmation with counter.">
+  <meta name="author" content="Osazee Imadonmwinyi">
+  <link rel="stylesheet" href="./styles/form.css">
+  <link rel="stylesheet" href="./styles/form-mobile.css" media="(max-width: 768px)">
+    <title>WDD 131 – Product Review Form – Osazee Imadonmwinyi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+   <script src="./scripts/form.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Product Review</h1>
+    <p>Please fill out the form below to share your product experience</p>
+</header>
+    <main>
+        <form action="review.html" method="get" id="productReviewForm" class="form-container">
+            <div class="productitems">
+            <label for="productName">Product Name: <span class="required">*</span></label>
+            <select name="" id="productName" name="productName" class="select-input">
+                <option value="" disabled selected>Choose a product...</option>
+            </select>
+            </div>
+            <fieldset>
+                <div class="rating-content">
+                <legend class="rate-text">Overall Rating<span class="required">*</span></legend>
+                <div class="rating">
+                    <div class="rates5">
+                    <div><span class="numb">5</span></div>
+                    <label for="rating5" class="star-rate">☆</label>
+                    <input type="radio" id="rating5" name="rating" value="5"  required>                  
+                    </div>
+                    <div class="rates4">
+                    <div><span class="numb">4</span></div>
+                    <label for="rating4" class="star-rate">☆</label>
+                    <input type="radio" id="rating4" name="rating" value="4"  required>
+                    </div>
+
+                    <div class="rates3">
+                    <div><span class="numb">3</span></div>
+                    <label for="rating3" class="star-rate">☆</label>
+                    <input type="radio" id="rating3" name="rating" value="3"  required>
+                    </div>
+
+                    <div class="rates2">
+                    <div><span class="numb">2</span></div>
+                    <label for="rating2" class="star-rate">☆</label>
+                    <input type="radio" id="rating2" name="rating" value="2"  required>
+                    </div>
+
+                    <div class="rates1">
+                    <div><span class="numb">1</span></div>
+                    <label for="rating1" class="star-rate">☆</label>
+                    <input type="radio" id="rating1" name="rating" value="1"  required>
+                    </div>
+
+                </div>
+                </div>
+            </fieldset>
+
+            <div class="date-input">
+            <label for="installDate">Date of Installation <span class="required">*</span></label>
+            <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+            <fieldset>
+                <div class="features-contents">
+                <legend>Which features did you find useful in the product? (check all that apply) </legend>
+                <label class="feature-input"><input type="checkbox" id="feature1" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" id="feature2" name="features" value="easy" class="feature-input">Ease of Use</label>
+                <label><input type="checkbox" id="feature3" name="features" value="performance" class="feature-input">Performance</label>
+                <label><input type="checkbox" id="feature4" name="features" value="design" class="feature-input">Design</label>
+                </div>
+            </fieldset>
+
+            <div class="review-note">
+            <label for="review">Written Review<span>(Optional)</span></label>
+            <textarea id="review" name="review" rows="5" placeholder="Write your review here...."></textarea>
+            </div>
+
+            <div class="name_user">
+            <label for="userName">Your Name<span>(Optional)</span></label>
+            <input type="text" id="userName" name="userName" placeholder="Write your name">
+            </div>
+
+            <input type="submit" value="Post Review" class="submit-btn">
+        </form>
+    </main>
+
+    <footer>
+        <div>
+        <p>©️<span id="year"></span>-Osazee Imadonmwinyi-Nigeria
+      </p>
+      <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
