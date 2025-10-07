@@ -27,6 +27,7 @@
         <form action="review.html" method="get" id="productReviewForm" class="form-container">
             <div class="productitems">
             <label for="productName">Product Name: <span class="required">*</span></label>
+        
             <select  id="productName" name="productName" class="select-input">
             <option value="" disabled selected>Choose a product...</option>
             </select>
@@ -77,7 +78,7 @@
                 
                 <legend>Which features did you find useful in the product? (check all that apply) </legend>
                 <div class="features-contents">
-                <label class="feature-input"><input type="checkbox" id="feature1" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" id="feature1" name="features" value="durability" class="feature-input">Durability</label>
                 <label><input type="checkbox" id="feature2" name="features" value="easy" class="feature-input">Ease of Use</label>
                 <label><input type="checkbox" id="feature3" name="features" value="performance" class="feature-input">Performance</label>
                 <label><input type="checkbox" id="feature4" name="features" value="design" class="feature-input">Design</label>
@@ -85,7 +86,7 @@
             </fieldset>
 
             <div class="review-note">
-            <label for="review">Written Review<span>(Optional)</span></label>
+            <label for="review">Written Review <span>(Optional)</span></label>
             <textarea id="review" name="review" rows="5" placeholder="Write your review here...."></textarea>
             </div>
 
